@@ -11,7 +11,21 @@
   <meta name="keywords"
     content="座間市のピアノ教室,櫻井ピアノスクール,ピアノ,座間駅近く,ピアノ教室,音大受験,楽典,子供向けピアノ教室,シニア向けピアノ教室,オンラインピアノ教室,オンライン対応,座間駅5分">
   <meta name="author" content="Yoko Iwasaki">
-
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- <script>
+    $(function () {
+      // #で始まるリンクをクリックしたら実行
+      $('a[href^="#"]').click(function () {
+        // スクロールの速度
+        var speed = 500; // ミリ秒で記述
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+      });
+    });
+  </script> -->
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,7 +34,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" /> -->
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
@@ -90,9 +104,9 @@
                 <img src="images/image-3.jpg" alt="" />
               </div>
             </div>
-            <div class="hero__footer">
-              <img class="hero__downarrow" src="images/arrow.svg" />
-              <span class="hero__scrolltext">scroll</span>
+            <div class="hero__footer"><a href="#hello">
+                <img class="hero__downarrow" src="images/arrow.svg" />
+                <span class="hero__scrolltext">click!</span></a>
             </div>
           </div>
         </div>
@@ -113,13 +127,13 @@
                   <h1 class="purple">楽しさと、美しさを分かち合う</h1>
                 </div>
                 <div class="travel__img cover-slide">
-                  <img class="img-zoom " src="images/image-piano-sm.jpg" alt="" />
+                  <img class="img-zoom " src="images/image-piano.jpg" alt="" />
                 </div>
                 <div class="travel__texts appear left">
                   <div class="travel__texts-inner">
-                    <!-- <div class="travel__title main-title item">
-                      <h2 class="purple">ご 挨 拶</span></h2>
-                    </div> -->
+                    <div class="travel__title main-title item">
+                      <h3 class="text-center">ご 挨 拶</span></h3>
+                    </div>
 
                     <div class="travel__description item">
                       <p class="sub-title">本日は櫻井ピアノスクールのホームページをご訪問いただき、ありがとうございます。
@@ -476,7 +490,7 @@
                   </tbody>
                 </table>
                 <p class="sub-title">※無料体験は一回のみのご案内です。<br> ※有料体験を受けられた方には入会金の割引があります。</p>
-                <div class="houses__btn appear up">
+                <div class="houses__btn appear up mb-lg">
                   <button class="btn slide-bg item"><a href="#contact">お申し込み</a></button><br />&nbsp;
                 </div>
               </div>
@@ -558,14 +572,14 @@
                   </div>
                 </div>
               </div>
-              <div class="houses__btn appear up">
+              <div class="houses__btn appear up mb-lg">
                 <button class="btn slide-bg item"><a href="#trial">体 験 レッスン</a></button><br />&nbsp;
               </div>
             </section>
             <!--voice end-->
 
             <!--FAQ-->
-            <section class="popular max-width" id="faq">
+            <section class="popular max-width mb-lg" id="faq">
               <div class="popular__header">
                 <h1 class="main-title tween-animate-title">Frequently Asked Questions</h1>
                 <p class="sub-title tween-animate-title">よくあるご質問にお答えします。</p>
@@ -693,7 +707,7 @@
                         <p class="sub-title">ワンレッスン</p>
                       </td>
                       <td>
-                        <p class="sub-title">45〜1時間　4000円</p>
+                        <p class="sub-title">45〜1時間 4000円</p>
                       </td>
                       <td>
                         </p>
@@ -702,19 +716,20 @@
                     </tr>
                   </tbody>
                 </table>
-                <div class="houses__btn appear up">
-                  <button class="btn slide-bg item"><a href="#trial">体 験 レッスン</a></button><br />&nbsp;
-                </div>
                 <p class="sub-title">※入会金は3000円です。<br>
                   （ご兄弟やご家族お二人目から免除。ご友人ご紹介につきましては、ご紹介者様、ご入会者様ともに特典がございます。）<br>その他のコース・詳細は、<a
                     href="https://line.me/ti/p/nnSoct30EZ">LINE</a>、<a
                     href="mailto:mintsakurai@rakuten.jp">メール</a>、またはお電話でお問い合わせください。</p>
+                <div class="houses__btn appear up mb-lg">
+                  <button class="btn slide-bg item"><a href="#trial">体 験 レッスン</a></button><br />&nbsp;
+                </div>
               </div>
             </section>
             <!--fee end-->
 
             <!--contact-->
             <section class="popular max-width" id="contact">
+              <div>&nbsp;</div>
               <div class="popular__header">
                 <h1 class="main-title">お問い合わせ・アクセス
                 </h1>
@@ -776,10 +791,10 @@
             </section>
             <!--contact ends-->
 
-            <section class="popular" id="profile">
+            <section class="popular mb-lg" id="profile">
               <div class="piano-bg-img">
                 <div class="popular__header">
-                  <h1 class="main-title purple" id="contact">講師プロフィール</h1>
+                  <h1 class="logo__world" id="contact">講師プロフィール</h1>
                   <div class="travel__title main-title tween-animate-title item text-faded">〜 櫻井 桂子 〜 Keiko Sakurai 〜
                   </div>
                 </div>
@@ -895,7 +910,7 @@
                 <p class="sub-title">ピアノ伴奏に関しましては<a
                     href="http://www.piano.or.jp/concert/accompaniment/bansousha-list.html"
                     target=”_blank”>ピティナの伴奏者紹介サイト</a>も併せてご覧いただけます。</p>
-                <div class="houses__btn appear up">
+                <div class="houses__btn appear up mb-lg">
                   <button class="btn filled item"><a href="#contact">ご 依 頼</a></button>
                   </dÏiv>
                 </div>
@@ -923,10 +938,10 @@
         </div>
       </div>
       <footer class="footer appear up">
-        <div class="logo item"><a href="#">
-            <img src="images/logo.svg" alt="" class="logo__img" />
-            <span class="logo__stay">音の</span>
-            <span class="logo__world"><a href="#">世界へ</a></span>
+        <div class="logo item">
+          <img src="images/logo.svg" alt="" class="logo__img" />
+          <span class="logo__stay">音の</span>
+          <span class="logo__world"><a href="#">世界へ</a></span>
         </div>
         <nav class="footer__nav">
           <ul class="footer__ul">
@@ -1006,18 +1021,12 @@
   <!--jQuery-->
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/1.12.1-jquery-ui.js"></script>
-  <script>
-    //FAQ
-    $(function () {
-      $("#accordion").accordion({
-        collapsible: true
-      });
-    });
-  </script>
   <script src="scripts/vendors/swiper.min.js"></script>
   <script src="scripts/vendors/TweenMax.min.js"></script>
   <script src="scripts/vendors/scroll-polyfill.js"></script>
   <script src="scripts/libs/scroll.js"></script>
+  <script src="scripts/libs/accordion.js"></script>
+  <script src="scripts/libs/smooth-scroll.js"></script>
   <script src="scripts/libs/text-animation.js"></script>
   <script src="scripts/libs/hero-slider.js"></script>
   <script src="scripts/libs/mobile-menu.js"></script>

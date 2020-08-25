@@ -3,7 +3,7 @@
 }
 
 .swiper-slide {
-  height: 500px;
+  height: 750px;
   overflow: hidden;
 
   & > img {
@@ -41,7 +41,7 @@
   overflow: hidden;
   padding-top: $navHeight;
   @extend .pb-lg;
-  
+
   &__title {
     position: absolute;
     top: 50%;

@@ -22,6 +22,11 @@ Stylesheet: 960px以上のモニタで適用
   padding-bottom: 150px !important;
 }
 
+.voices {
+  &__item {
+    max-width: 30%;
+  }
+
 .popular {
   &__item {
     flex-basis: 25%;
@@ -34,7 +39,7 @@ Stylesheet: 960px以上のモニタで適用
 
 .travel {
   &__img {
-    height: 600px;
+    height: 100%;
   }
 
   &__description {
@@ -67,4 +72,5 @@ Stylesheet: 960px以上のモニタで適用
 
 .swiper-slide {
   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}
 }
