@@ -1013,15 +1013,33 @@ a:hover {
   padding: 40px 15px 15px 15px;
 }
 
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
+.text-faded_title {
+  font-size: 35px;
+  color: rgba(255, 255, 255);
+  background-color: rgba(70, 68, 68, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: inline-flex; */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px auto;
+}
+.text-faded {
+  color: rgba(255, 255, 255);
+  background-color: rgba(70, 68, 68, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   font-weight: 400;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .font-sm,
